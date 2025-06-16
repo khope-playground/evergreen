@@ -1,0 +1,14 @@
+# Ignore go build/cache files
+bin/
+vendor/
+*.log
+*.out
+
+# IDE
+.vscode/
+.idea/
+
+# Git
+.git
+.gitignore
+
