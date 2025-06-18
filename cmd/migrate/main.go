@@ -3,7 +3,7 @@ package main
 import (
 	"log"
 
-	model "github.com/rlaope/evergreen/intenral/model/kn"
+	"github.com/rlaope/evergreen/intenral/model"
 	"gorm.io/driver/mysql"
 	"gorm.io/gorm"
 )
@@ -19,6 +19,8 @@ func main() {
 		&model.Forest{},
 		&model.Tree{},
 		&model.Comment{},
+		&model.User{},
+		&model.UserDetail{},
 	); err != nil {
 		log.Fatal("마이그레이션 실패:", err)
 	}
